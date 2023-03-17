@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-
+mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="signIn.css" />
+    <title>Sign Up Form</title>
+  </head>
+
+  <body>
+    <img id="logo" src="images/logo.png" />
+    <div class="signInForm">
+      <div id="heading">
+        <div class="singInPageNum" id="num1">1</div>
+        <hr />
+        <div class="singInPageNum" id="num2">2</div>
+        <hr />
+        <div class="singInPageNum" id="num3">3</div>
+        <h1 class="title">Sign-In Form</h1>
+      </div>
+
+      <!-- Form Page 1 -->
+      <div class="form_1">
+        <div class="form">
+          <label class="form-label">First Name</label>
+          <br />
+          <input type="text" class="form-input" />
+        </div>
+        <div class="form">
+          <label class="form-label">Last Name</label>
+          <br />
+          <input type="text" class="form-input" />
+        </div>
+        <div class="form" id="idForm">
+          <label class="form-label-1">ID Card</label>
+          <br />
+          <input type="text" class="form-input-page-2" />
+        </div>
+        <br />
+        <br />
+        <div class="form1">
+          <label class="form-label-2">Gender</label>
+          <br /><br />
+          <select name="gender" id="genders">
+            <option value="volvo">Male</option>
+            <option value="saab">Female</option>
+          </select>
+        </div>
+        <div class="form2">
+          <label class="form-label-2">Date of Birth</label>
+          <br /><br />
+          <input type="date" id="birthday" name="birthday" />
+        </div>
+        <br />
+        <button type="submit" class="next-page-1">Next</button>
+      </div>
+      <!-- Form Page 2 -->
+      <div class="form_2">
+        <div class="form-page-2">
+          <label class="form-label-page-2">Address</label>
+          <br />
+          <input type="text" class="form-input-page-2" />
+        </div>
+        <div class="form-page-2">
+          <label class="form-label-1">Phone Number</label>
+          <br />
+          <input type="tel" class="form-input-page-2" />
+        </div>
+        <div class="form-page-2">
+          <label class="form-label-1">Email</label>
+          <br />
+          <input type="text" class="form-input-page-2" />
+        </div>
+
+        <br />
+        <button type="submit" class="prev-page-2">Previous</button>
+        <button type="submit" class="next-page-2">Next</button>
+      </div>
+      <!-- Form Page 3 -->
+      <div class="form_3">
+        <div class="form-page-2">
+          <label class="form-label-page-2">Reason for Visit</label>
+          <br />
+          <input type="text" class="form-input-page-2" />
+        </div>
+        <div class="form-page-2">
+          <label class="form-label-1">Medical History</label>
+          <br />
+          <input type="text" class="form-input-page-2" />
+        </div>
+        <div class="form-page-2">
+          <label class="form-label-1">Drug History</label>
+          <br />
+          <input type="text" class="form-input-page-2" />
+        </div>
+
+        <br />
+        <button type="submit" class="prev-page-3">Previous</button>
+        <a href="LandingPage.html"
+          ><button type="submit" class="next-page-3">Next</button></a
+        >
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

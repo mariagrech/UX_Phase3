@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #0a5375;
+}
+
+body {
+  background-color: #0a5375;
+  /* overflow: hidden; */
+}
+
+.logo-title {
+  width: 100%;
+  height: 10vh;
+  margin-bottom: 1%;
+}
+
+#logo {
+  width: 10%;
+  margin: 2%;
+  position: static;
+  float: left;
+}
+
+.container {
+  background-color: white;
+  width: 40%;
+  margin: 3%;
+  padding: 2%;
+  float: left;
+  border-radius: 10%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.container:hover {
+  /* transform: translateY(100px); */
+  /* transform: rotate(20deg); */
+  transform: scale(1.1);
+}
+
+.container-dep {
+  background-color: white;
+  width: 14%;
+  height: 180px;
+  margin: 0 1%;
+  padding: 2%;
+  float: left;
+  border-radius: 10%;
+  text-align: center;
+  animation-duration: 3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+.container-dep:hover {
+  /* height: 50%; */
+  transform: scale(1.1);
+  /* background-color: grey; */
+  /* color: #0a5375; */
+}
+
+.icon {
+  width: 40%;
+  height: 40%;
+  margin: 2%;
+  border-radius: 50%;
+}
+.icons {
+  width: 40%;
+  margin: 5%;
+}
+
+.info {
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 5%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.Med-Info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.med-info-button {
+  width: 70%;
+  margin: 5% 10%;
+  bottom: 10px;
+  background-color: #0a5375;
+  color: white;
+  padding: 3%;
+  border: none;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.more-info-button {
+  width: 40%;
+  margin: 2% 33%;
+  bottom: 10px;
+  background-color: #0a5375;
+  color: white;
+  padding: 2%;
+  border: none;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.title-Med,
+.title-prof {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  float: left;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  font-size: 50px;
+}
+.title-medical {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+
+/* Hover Button */
+.more-info-button:hover,
+.med-info-button:hover {
+  background-color: #0f87bf;
+}
+
+/* Department Section */
+
+#dep-info {
+  /* width: 81%; */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 5%;
+}
+#depimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.back {
+  font-size: 30px;
+  padding: 1%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.fas {
+  color: #86ccea;
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+  .title {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 50px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  body {
+    background-color: #0a5375;
+  }
+  .title {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 9%;
+    font-size: 30px;
+  }
+  .Med-Info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 5%;
+    font-size: 10px;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .container-dep {
+    background-color: white;
+    width: 40%;
+    height: 190px;
+    margin: 0 3% 3% 3%;
+    padding: 2%;
+    float: left;
+    border-radius: 10%;
+    text-align: center;
+    animation-duration: 3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  }
+
+  /* Department Section */
+
+  #dep-info {
+    /* width: 81%; */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 5%;
+  }
+  #depimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+
+/* Phone */
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #0a5375;
+  }
+  .title {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 9%;
+    font-size: 20px;
+  }
+
+  .title-Med,
+  .title-prof {
+    font-family: "Roboto Slab", serif;
+    color: white;
+    float: left;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 40px;
+  }
+
+  .Med-Info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .more-info-button {
+    width: 70%;
+    margin: 2% 2%;
+    bottom: 10px;
+    background-color: #0a5375;
+    color: white;
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .title-medical {
+    font-family: "Roboto Slab", serif;
+    font-size: 15px;
+  }
+
+  .info {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin: 5%;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .container {
+    background-color: white;
+    width: 90%;
+    margin: 3%;
+    padding: 2%;
+    float: left;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  }
+
+  .container-dep {
+    background-color: white;
+    width: 90%;
+    height: 190px;
+    margin: 0 3% 3% 3%;
+    padding: 2%;
+    float: left;
+    border-radius: 10%;
+    text-align: center;
+    animation-duration: 3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  }
+
+  /* Department Section */
+
+  #dep-info {
+    /* width: 81%; */
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 5%;
+  }
+  #depimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
